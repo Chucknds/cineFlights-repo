@@ -66,3 +66,7 @@ body {
 .footerBlack {
   background-color: black;
 }
+
+.navBlack {
+  background-color: rgba(0, 0, 0, 0.753);
+}
