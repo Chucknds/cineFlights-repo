@@ -11,66 +11,130 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- *mi-css -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Contacto</title>
+    <!-- *AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
-    <!-- *navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">
+    
+  <!-- *inicia header -->
+    <header class="sticky-top">
+      
+      <!-- *navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">
             <div class="container-fluid fontOswaldBold">
-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo/cineflights-newlogo-textv2.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>
+                    <a class="nav-link" aria-current="page" href="../pages/servicios.html">SERVICIOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/pages/galeria.html">GALERÍA</a>
+                    <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>
+                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="/pages/contacto.html">CONTACTO</a>
+                    <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
+      <!-- *ends navbar -->
+
     </header>
-    <!-- *ends navbar -->
-
-
+    <!--*termina header -->
+   
+    <!-- *inicia main -->
     <main>
+      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldBold" data-aos="fade-down" data-aos-duration="1000">
+        <h1>CONTACTO</h1>
+      </section>
+
+      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav mt-3" data-aos="fade-down" data-aos-duration="1000">
+        <p class="text-center">PARA UNA ATENCIÓN MÁS PERSONALIZADA Y DE MAYOR CALIDAD PONEMOS A SU DISPOSICIÓN NUESTRO FORMULARIO DE CONTACTO</p>
+      </section>
+
+      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav" data-aos="fade-down" data-aos-duration="1000">
+        <p class="text-center"> EN EL CUAL PODRÁ REALIZAR SUS CONSULTAS RELACIONADAS CON NUESTROS SERVICIOS ASÍ COMO SOLICITAR COTIZACIONES Y AGENDARLOS.</p>
+      </section>
+
       
+      <!-- *forms start -->
+    <div class="container-fluid">
+      <div class="mb-3">
+        <label for=FormControlInput1" class="form-label whiteText fontOswaldBold">NOMBRE</label>
+        <input type="nombre" class="form-control" id=2FormControlInput1" placeholder="Nombre">
+      </div>
+
+      <div class="mb-3">
+        <label for="FormControlInput2" class="form-labe whiteText fontOswaldBoldl">APELLIDO</label>
+        <input type="apellido" class="form-control" id="FormControlInput2" placeholder="Apellido">
+      </div>
+
+      <div class="mb-3">
+        <label for="FormControlInput3" class="form-label whiteText fontOswaldBold">EMAIL</label>
+        <input type="email" class="form-control" id="FormControlInput3" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <label for="FormControlInput4" class="form-label whiteText fontOswaldBold">TELÉFONO</label>
+        <input type="telefono" class="form-control" id="FormControlInput4" placeholder="Teléfono">
+      </div>
+      <div class="mb-3">
+        <label for="FormControlTextarea1" class="form-label whiteText fontOswaldBold">SU MENSAJE</label>
+        <textarea class="form-control" id="FormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
+      </div>
+      <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-outline-light justify-content-center fontOswaldBold">ENVIAR</button>
+      </div>
+    </div>
+    <!-- *form end -->
+
+    <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav mt-3">
+      <p class="text-center"> GRACIAS POR SU CONFIANZA.</p>
+    </section>
+
     </main>
 
-    <footer class="container-fluid">
-      <!-- PARRAFO -->
-      <p class="whiteText fontOswaldBold">
-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©
-      </p>
-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->
-      <div class="listaRedes">
-        <a href="https://facebook.com" target="_blank"
-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"
-        /></a>
-        <a href="https://instagram.com" target="_blank"
-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"
-        /></a>
-        <a href="https://youtube.com" target="_blank"
-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"
-        /></a>
-      </div>
-    </footer>
+    <!-- *termina main -->
 
-    <!--*script java -->
+    <!-- *footer -->
+    <section class="container mt-4">
+    </section>
+
+    <footer class="footerBlack whiteText">
+     <div class="contanier"></div>
+     <nav class="row">
+       <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>
+
+       <ul>
+         <li class="col-3 list-unstyled"></li>
+         <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>
+         <li class="d-flex justify-content-center">
+           <a href="http://facebook.com" target="_blank"><img src="../img/icons/facebook-24pxwhite.png" alt=""></a>
+           <a href="http://instagram.com" target="_blank"><img src="../img/icons/instagram-24pxwhite.png" alt=""></a>
+           <a href="http://youtube.com" target="_blank"><img src="../img/icons/youtube-24pxwhite.png" alt=""></a>
+         </li>
+       </ul>
+     </nav>
+    </footer>
+    <!-- *ends footer -->
+
+    <!--*script java BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- *SCRIPT JAVA AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
