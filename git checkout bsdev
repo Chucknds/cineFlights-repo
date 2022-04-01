@@ -1,0 +1,851 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex 3da8bd8..6fff483 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1,3 +1 @@[m
+[31m-*.ai[m
+[31m-*.psd[m
+[31m-*.log[m
+[32m+[m[32m*.ai[m
+\ No newline at end of file[m
+[1mdiff --git a/README.md b/README.md[m
+[1mdeleted file mode 100644[m
+[1mindex 350d4e7..0000000[m
+[1m--- a/README.md[m
+[1m+++ /dev/null[m
+[36m@@ -1,2 +0,0 @@[m
+[31m-# cineFlights-repo[m
+[31m-este proyecto es la página web para la empresa mexicana Cine Flights[m
+[1mdiff --git a/css/style.css b/css/style.css[m
+[1mindex 20f7cae..ac13ba2 100644[m
+[1m--- a/css/style.css[m
+[1m+++ b/css/style.css[m
+[36m@@ -62,3 +62,11 @@[m [mbody {[m
+   border-radius: 0.25rem;[m
+   transform: scale(0.9);[m
+ }[m
+[32m+[m
+[32m+[m[32m.footerBlack {[m
+[32m+[m[32m  background-color: black;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.navBlack {[m
+[32m+[m[32m  background-color: rgba(0, 0, 0, 0.753);[m
+[32m+[m[32m}[m
+[1mdiff --git a/img/about/chuck.jpg b/img/about/chuck.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..38543f5[m
+Binary files /dev/null and b/img/about/chuck.jpg differ
+[1mdiff --git a/img/about/cine-flighst.jpg b/img/about/cine-flighst.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..79bb165[m
+Binary files /dev/null and b/img/about/cine-flighst.jpg differ
+[1mdiff --git a/img/gallery/gallery4.jpg b/img/gallery/gallery4.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b21c272[m
+Binary files /dev/null and b/img/gallery/gallery4.jpg differ
+[1mdiff --git a/img/gallery/gallery5.jpg b/img/gallery/gallery5.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1da8510[m
+Binary files /dev/null and b/img/gallery/gallery5.jpg differ
+[1mdiff --git a/img/gallery/gallery6.jpg b/img/gallery/gallery6.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1da38f1[m
+Binary files /dev/null and b/img/gallery/gallery6.jpg differ
+[1mdiff --git a/img/gallery/gallery7.jpg b/img/gallery/gallery7.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..033509c[m
+Binary files /dev/null and b/img/gallery/gallery7.jpg differ
+[1mdiff --git a/img/gallery/gallery8.jpg b/img/gallery/gallery8.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d75cedd[m
+Binary files /dev/null and b/img/gallery/gallery8.jpg differ
+[1mdiff --git a/img/gallery/gallery9.jpg b/img/gallery/gallery9.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..94ef0f8[m
+Binary files /dev/null and b/img/gallery/gallery9.jpg differ
+[1mdiff --git a/img/logo/cineflights-newlogo-textv2.png b/img/logo/cineflights-newlogo-textv2.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5be815[m
+Binary files /dev/null and b/img/logo/cineflights-newlogo-textv2.png differ
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b65f285..6fd56ed 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -11,7 +11,7 @@[m
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">[m
+ [m
+     <!-- *mi-css -->[m
+[31m-    <link rel="stylesheet" href="/css/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="./css/style.css">[m
+ [m
+     <title>CineFlights</title>[m
+     <!-- *AOS LINK -->[m
+[36m@@ -19,37 +19,39 @@[m
+ [m
+ [m
+ </head>[m
+[31m-<body>[m
+[32m+[m[32m    <body>[m
+[32m+[m[32m    <!-- *inicia header -->[m
+[32m+[m[32m    <header class="sticky-top">[m
+     <!-- *navbar -->[m
+[31m-    <header>[m
+[31m-        <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular" style="background-color: rgba(0, 0, 0, 0.589)">[m
+[32m+[m[32m        <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">[m
+             <div class="container-fluid fontOswaldBold">[m
+[31m-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>[m
+[32m+[m[32m              <a class="navbar-brand" href="./index.html"><img src="./img/logo/cineflights-newlogo-textv2.png" alt=""></a>[m
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="navbar-toggler-icon"></span>[m
+               </button>[m
+               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">[m
+                 <ul class="navbar-nav">[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link active" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>[m
+[32m+[m[32m                    <a class="nav-link" aria-current="page" href="./pages/servicios.html">SERVICIOS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/galeria.html">GALERÍA</a>[m
+[32m+[m[32m                    <a class="nav-link" href="./pages/galeria.html">GALERÍA</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>[m
+[32m+[m[32m                    <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>[m
+[32m+[m[32m                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>[m
+                   </li>[m
+                 </ul>[m
+               </div>[m
+             </div>[m
+           </nav>[m
+[31m-    </header>[m
+     <!-- *ends navbar -->[m
+[32m+[m[32m    </header>[m
+[32m+[m[32m    <!-- *termina header -->[m
+ [m
+[31m-[m
+[32m+[m[32m    <!-- *inicia main -->[m
+     <main class="container-fluid">[m
+       <!-- *video -->[m
+       <div class="ratio ratio-16x9">[m
+[36m@@ -66,27 +68,31 @@[m
+         </article>[m
+       </section>[m
+     </main>[m
+[32m+[m[32m    <!-- *termina main -->[m
+ [m
+[31m-    <footer class="container-fluid">[m
+[31m-      <!-- PARRAFO -->[m
+[31m-      <p class="whiteText fontOswaldBold">[m
+[31m-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©[m
+[31m-      </p>[m
+[31m-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->[m
+[31m-      <div class="listaRedes">[m
+[31m-        <a href="https://facebook.com" target="_blank"[m
+[31m-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"[m
+[31m-        /></a>[m
+[31m-        <a href="https://instagram.com" target="_blank"[m
+[31m-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"[m
+[31m-        /></a>[m
+[31m-        <a href="https://youtube.com" target="_blank"[m
+[31m-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"[m
+[31m-        /></a>[m
+[31m-      </div>[m
+[32m+[m[32m    <!-- *footer -->[m
+[32m+[m[32m    <section class="container mt-4">[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <footer class="footerBlack whiteText">[m
+[32m+[m[32m     <div class="contanier"></div>[m
+[32m+[m[32m     <nav class="row">[m
+[32m+[m[32m       <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>[m
+[32m+[m
+[32m+[m[32m       <ul>[m
+[32m+[m[32m         <li class="col-3 list-unstyled"></li>[m
+[32m+[m[32m         <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>[m
+[32m+[m[32m         <li class="d-flex justify-content-center">[m
+[32m+[m[32m           <a href="http://facebook.com" target="_blank"><img src="./img/icons/facebook-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://instagram.com" target="_blank"><img src="./img/icons/instagram-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://youtube.com" target="_blank"><img src="./img/icons/youtube-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m         </li>[m
+[32m+[m[32m       </ul>[m
+[32m+[m[32m     </nav>[m
+     </footer>[m
+[32m+[m[32m    <!-- *ends footer -->[m
+ [m
+[31m-    <!--*script java -->[m
+[32m+[m[32m    <!--*script java BS -->[m
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>[m
+     <!-- *SCRIPT JAVA AOS -->[m
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>[m
+[1mdiff --git a/pages/contacto.html b/pages/contacto.html[m
+[1mindex e7e78b2..2723e79 100644[m
+[1m--- a/pages/contacto.html[m
+[1m+++ b/pages/contacto.html[m
+[36m@@ -11,66 +11,130 @@[m
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">[m
+ [m
+     <!-- *mi-css -->[m
+[31m-    <link rel="stylesheet" href="/css/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="../css/style.css">[m
+ [m
+     <title>Contacto</title>[m
+[32m+[m[32m    <!-- *AOS LINK -->[m
+[32m+[m[32m    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">[m
+ [m
+ </head>[m
+ <body>[m
+[31m-    <!-- *navbar -->[m
+[31m-    <header>[m
+[31m-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">[m
+[32m+[m[41m    [m
+[32m+[m[32m  <!-- *inicia header -->[m
+[32m+[m[32m    <header class="sticky-top">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <!-- *navbar -->[m
+[32m+[m[32m      <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">[m
+             <div class="container-fluid fontOswaldBold">[m
+[31m-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>[m
+[32m+[m[32m              <a class="navbar-brand" href="../index.html"><img src="../img/logo/cineflights-newlogo-textv2.png" alt=""></a>[m
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="navbar-toggler-icon"></span>[m
+               </button>[m
+               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">[m
+                 <ul class="navbar-nav">[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>[m
+[32m+[m[32m                    <a class="nav-link" aria-current="page" href="../pages/servicios.html">SERVICIOS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/galeria.html">GALERÍA</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link active" href="/pages/contacto.html">CONTACTO</a>[m
+[32m+[m[32m                    <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>[m
+                   </li>[m
+                 </ul>[m
+               </div>[m
+             </div>[m
+           </nav>[m
+[32m+[m[32m      <!-- *ends navbar -->[m
+[32m+[m
+     </header>[m
+[31m-    <!-- *ends navbar -->[m
+[32m+[m[32m    <!--*termina header -->[m
+[32m+[m[41m   [m
+[32m+[m[32m    <!-- *inicia main -->[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldBold" data-aos="fade-down" data-aos-duration="1000">[m
+[32m+[m[32m        <h1>CONTACTO</h1>[m
+[32m+[m[32m      </section>[m
+ [m
+[32m+[m[32m      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav mt-3" data-aos="fade-down" data-aos-duration="1000">[m
+[32m+[m[32m        <p class="text-center">PARA UNA ATENCIÓN MÁS PERSONALIZADA Y DE MAYOR CALIDAD PONEMOS A SU DISPOSICIÓN NUESTRO FORMULARIO DE CONTACTO</p>[m
+[32m+[m[32m      </section>[m
+[32m+[m
+[32m+[m[32m      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav" data-aos="fade-down" data-aos-duration="1000">[m
+[32m+[m[32m        <p class="text-center"> EN EL CUAL PODRÁ REALIZAR SUS CONSULTAS RELACIONADAS CON NUESTROS SERVICIOS ASÍ COMO SOLICITAR COTIZACIONES Y AGENDARLOS.</p>[m
+[32m+[m[32m      </section>[m
+ [m
+[31m-    <main>[m
+       [m
+[31m-    </main>[m
+[32m+[m[32m      <!-- *forms start -->[m
+[32m+[m[32m    <div class="container-fluid">[m
+[32m+[m[32m      <div class="mb-3">[m
+[32m+[m[32m        <label for=FormControlInput1" class="form-label whiteText fontOswaldBold">NOMBRE</label>[m
+[32m+[m[32m        <input type="nombre" class="form-control" id=2FormControlInput1" placeholder="Nombre">[m
+[32m+[m[32m      </div>[m
+ [m
+[31m-    <footer class="container-fluid">[m
+[31m-      <!-- PARRAFO -->[m
+[31m-      <p class="whiteText fontOswaldBold">[m
+[31m-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©[m
+[31m-      </p>[m
+[31m-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->[m
+[31m-      <div class="listaRedes">[m
+[31m-        <a href="https://facebook.com" target="_blank"[m
+[31m-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"[m
+[31m-        /></a>[m
+[31m-        <a href="https://instagram.com" target="_blank"[m
+[31m-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"[m
+[31m-        /></a>[m
+[31m-        <a href="https://youtube.com" target="_blank"[m
+[31m-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"[m
+[31m-        /></a>[m
+[32m+[m[32m      <div class="mb-3">[m
+[32m+[m[32m        <label for="FormControlInput2" class="form-labe whiteText fontOswaldBoldl">APELLIDO</label>[m
+[32m+[m[32m        <input type="apellido" class="form-control" id="FormControlInput2" placeholder="Apellido">[m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      <div class="mb-3">[m
+[32m+[m[32m        <label for="FormControlInput3" class="form-label whiteText fontOswaldBold">EMAIL</label>[m
+[32m+[m[32m        <input type="email" class="form-control" id="FormControlInput3" placeholder="Email">[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="mb-3">[m
+[32m+[m[32m        <label for="FormControlInput4" class="form-label whiteText fontOswaldBold">TELÉFONO</label>[m
+[32m+[m[32m        <input type="telefono" class="form-control" id="FormControlInput4" placeholder="Teléfono">[m
+       </div>[m
+[32m+[m[32m      <div class="mb-3">[m
+[32m+[m[32m        <label for="FormControlTextarea1" class="form-label whiteText fontOswaldBold">SU MENSAJE</label>[m
+[32m+[m[32m        <textarea class="form-control" id="FormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="d-flex justify-content-center">[m
+[32m+[m[32m      <button type="button" class="btn btn-outline-light justify-content-center fontOswaldBold">ENVIAR</button>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <!-- *form end -->[m
+[32m+[m
+[32m+[m[32m    <section class="container-fluid d-flex justify-content-center whiteText fontOswaldRegularNav mt-3">[m
+[32m+[m[32m      <p class="text-center"> GRACIAS POR SU CONFIANZA.</p>[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    </main>[m
+[32m+[m
+[32m+[m[32m    <!-- *termina main -->[m
+[32m+[m
+[32m+[m[32m    <!-- *footer -->[m
+[32m+[m[32m    <section class="container mt-4">[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <footer class="footerBlack whiteText">[m
+[32m+[m[32m     <div class="contanier"></div>[m
+[32m+[m[32m     <nav class="row">[m
+[32m+[m[32m       <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>[m
+[32m+[m
+[32m+[m[32m       <ul>[m
+[32m+[m[32m         <li class="col-3 list-unstyled"></li>[m
+[32m+[m[32m         <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>[m
+[32m+[m[32m         <li class="d-flex justify-content-center">[m
+[32m+[m[32m           <a href="http://facebook.com" target="_blank"><img src="../img/icons/facebook-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://instagram.com" target="_blank"><img src="../img/icons/instagram-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://youtube.com" target="_blank"><img src="../img/icons/youtube-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m         </li>[m
+[32m+[m[32m       </ul>[m
+[32m+[m[32m     </nav>[m
+     </footer>[m
+[32m+[m[32m    <!-- *ends footer -->[m
+ [m
+[31m-    <!--*script java -->[m
+[32m+[m[32m    <!--*script java BS -->[m
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>[m
+[32m+[m
+[32m+[m[32m        <!-- *SCRIPT JAVA AOS -->[m
+[32m+[m[32m        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>[m
+[32m+[m[32m        <script>[m
+[32m+[m[32m          AOS.init();[m
+[32m+[m[32m        </script>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/pages/galeria.html b/pages/galeria.html[m
+[1mindex 0ffd14f..25d994d 100644[m
+[1m--- a/pages/galeria.html[m
+[1m+++ b/pages/galeria.html[m
+[36m@@ -11,91 +11,176 @@[m
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">[m
+ [m
+     <!-- *mi-css -->[m
+[31m-    <link rel="stylesheet" href="/css/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="../css/style.css">[m
+ [m
+     <title>Galería</title>[m
+[32m+[m[32m        <!-- *AOS LINK -->[m
+[32m+[m[32m        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">[m
+ [m
+ </head>[m
+ <body>[m
+[31m-    <!-- *navbar -->[m
+[31m-    <header>[m
+[31m-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!--*incia header  -->[m
+[32m+[m[32m  <header class="sticky-top">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <!-- *navbar -->[m
+[32m+[m[32m      <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">[m
+             <div class="container-fluid fontOswaldBold">[m
+[31m-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>[m
+[32m+[m[32m              <a class="navbar-brand" href="../index.html"><img src="../img/logo/cineflights-newlogo-textv2.png" alt=""></a>[m
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="navbar-toggler-icon"></span>[m
+               </button>[m
+               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">[m
+                 <ul class="navbar-nav">[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>[m
+[32m+[m[32m                    <a class="nav-link" aria-current="page" href="../pages/servicios.html">SERVICIOS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link active" href="/pages/galeria.html">GALERÍA</a>[m
+[32m+[m[32m                    <a class="nav-link active" href="../pages/galeria.html">GALERÍA</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>[m
+                   </li>[m
+                 </ul>[m
+               </div>[m
+             </div>[m
+           </nav>[m
+[31m-    </header>[m
+     <!-- *ends navbar -->[m
+ [m
+[32m+[m[32m    </header>[m
+[32m+[m
+[32m+[m[32m    <!-- *termina header -->[m
+[32m+[m[41m    [m
+ [m
+[32m+[m[32m    <p class="h3 d-flex justify-content-center whiteText fontOswaldBold container-fluid mb-3" data-aos="fade-down" data-aos-duration="1000">DRONES DE CONSUMO</p>[m
+[32m+[m[41m    [m
+[32m+[m[32m  <!-- *inicia main -->[m
+     <main>[m
+[31m-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <!-- *GALLERY -->[m
+[32m+[m[32m      <div id="carousel1" class="carousel slide" data-bs-ride="carousel">[m
+         <div class="carousel-indicators">[m
+[31m-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>[m
+[31m-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>[m
+[31m-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>[m
+         </div>[m
+         <div class="carousel-inner">[m
+           <div class="carousel-item active">[m
+[31m-            <img src="/img/gallery/gallery1.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m            <img src="../img/gallery/gallery1.jpg" class="d-block w-100" alt="...">[m
+           </div>[m
+           <div class="carousel-item">[m
+[31m-            <img src="/img/gallery/gallery2.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m            <img src="../img/gallery/gallery2.jpg" class="d-block w-100" alt="...">[m
+           </div>[m
+           <div class="carousel-item">[m
+[31m-            <img src="/img/gallery/gallery3.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m            <img src="../img/gallery/gallery3.jpg" class="d-block w-100" alt="...">[m
+           </div>[m
+         </div>[m
+[31m-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">[m
+[32m+[m[32m        <button class="carousel-control-prev" type="button" data-bs-target="#carouse1s" data-bs-slide="prev">[m
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>[m
+           <span class="visually-hidden">Previous</span>[m
+         </button>[m
+[31m-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">[m
+[32m+[m[32m        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">[m
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>[m
+           <span class="visually-hidden">Next</span>[m
+         </button>[m
+       </div>[m
+[31m-    </main>[m
+ [m
+[31m-    <footer class="container-fluid">[m
+[31m-      <!-- PARRAFO -->[m
+[31m-      <p class="whiteText fontOswaldBold">[m
+[31m-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©[m
+[31m-      </p>[m
+[31m-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->[m
+[31m-      <div class="listaRedes">[m
+[31m-        <a href="https://facebook.com" target="_blank"[m
+[31m-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"[m
+[31m-        /></a>[m
+[31m-        <a href="https://instagram.com" target="_blank"[m
+[31m-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"[m
+[31m-        /></a>[m
+[31m-        <a href="https://youtube.com" target="_blank"[m
+[31m-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"[m
+[31m-        /></a>[m
+[32m+[m[32m      <p class="h3 d-flex justify-content-center whiteText fontOswaldBold container-fluid mt-3 mb-3" data-aos="fade-down" data-aos-duration="1000">DRONES FPV</p>[m
+[32m+[m
+[32m+[m[32m      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">[m
+[32m+[m[32m        <div class="carousel-indicators">[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="carousel-inner">[m
+[32m+[m[32m          <div class="carousel-item active">[m
+[32m+[m[32m            <img src="../img/gallery/gallery4.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <img src="../img/gallery/gallery5.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <img src="../img/gallery/gallery6.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">[m
+[32m+[m[32m          <span class="carousel-control-prev-icon" aria-hidden="true"></span>[m
+[32m+[m[32m          <span class="visually-hidden">Previous</span>[m
+[32m+[m[32m        </button>[m
+[32m+[m[32m        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">[m
+[32m+[m[32m          <span class="carousel-control-next-icon" aria-hidden="true"></span>[m
+[32m+[m[32m          <span class="visually-hidden">Next</span>[m
+[32m+[m[32m        </button>[m
+       </div>[m
+[32m+[m
+[32m+[m[32m      <p class="h3 d-flex justify-content-center whiteText fontOswaldBold container-fluid mt-3 mb-3" data-aos="fade-down" data-aos-duration="1000">SERVICIOS ESPECIALIZADOS</p>[m
+[32m+[m
+[32m+[m[32m      <div id="carousel3" class="carousel slide" data-bs-ride="carousel">[m
+[32m+[m[32m        <div class="carousel-indicators">[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>[m
+[32m+[m[32m          <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="carousel-inner">[m
+[32m+[m[32m          <div class="carousel-item active">[m
+[32m+[m[32m            <img src="../img/gallery/gallery7.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <img src="../img/gallery/gallery8.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="carousel-item">[m
+[32m+[m[32m            <img src="../img/gallery/gallery9.jpg" class="d-block w-100" alt="...">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">[m
+[32m+[m[32m          <span class="carousel-control-prev-icon" aria-hidden="true"></span>[m
+[32m+[m[32m          <span class="visually-hidden">Previous</span>[m
+[32m+[m[32m        </button>[m
+[32m+[m[32m        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">[m
+[32m+[m[32m          <span class="carousel-control-next-icon" aria-hidden="true"></span>[m
+[32m+[m[32m          <span class="visually-hidden">Next</span>[m
+[32m+[m[32m        </button>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <!-- *termina gallery -->[m
+[32m+[m
+[32m+[m[41m      [m
+[32m+[m[32m    </main>[m
+[32m+[m
+[32m+[m[32m    <!-- *termina main -->[m
+[32m+[m
+[32m+[m[32m    <!-- *footer -->[m
+[32m+[m[32m    <section class="container mt-4">[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <footer class="footerBlack whiteText">[m
+[32m+[m[32m     <div class="contanier"></div>[m
+[32m+[m[32m     <nav class="row">[m
+[32m+[m[32m       <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>[m
+[32m+[m
+[32m+[m[32m       <ul>[m
+[32m+[m[32m         <li class="col-3 list-unstyled"></li>[m
+[32m+[m[32m         <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>[m
+[32m+[m[32m         <li class="d-flex justify-content-center">[m
+[32m+[m[32m           <a href="http://facebook.com" target="_blank"><img src="../img/icons/facebook-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://instagram.com" target="_blank"><img src="../img/icons/instagram-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://youtube.com" target="_blank"><img src="../img/icons/youtube-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m         </li>[m
+[32m+[m[32m       </ul>[m
+[32m+[m[32m     </nav>[m
+     </footer>[m
+[32m+[m[32m    <!-- *ends footer -->[m
+ [m
+     <!--*script java -->[m
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>[m
+[32m+[m
+[32m+[m[32m        <!-- *SCRIPT JAVA AOS -->[m
+[32m+[m[32m        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>[m
+[32m+[m[32m        <script>[m
+[32m+[m[32m          AOS.init();[m
+[32m+[m[32m        </script>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/pages/nosotros.html b/pages/nosotros.html[m
+[1mindex c67abe7..913b2d4 100644[m
+[1m--- a/pages/nosotros.html[m
+[1m+++ b/pages/nosotros.html[m
+[36m@@ -11,66 +11,107 @@[m
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">[m
+ [m
+     <!-- *mi-css -->[m
+[31m-    <link rel="stylesheet" href="/css/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="../css/style.css">[m
+ [m
+     <title>Nosotros</title>[m
+[32m+[m[32m    <!-- *AOS LINK -->[m
+[32m+[m[32m    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">[m
+ [m
+ </head>[m
+ <body>[m
+[31m-    <!-- *navbar -->[m
+[31m-    <header>[m
+[31m-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">[m
+[32m+[m[41m    [m
+[32m+[m[32m  <!-- *inicia header -->[m
+[32m+[m[32m    <header class="sticky-top">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <!-- *navbar -->[m
+[32m+[m[32m      <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">[m
+             <div class="container-fluid fontOswaldBold">[m
+[31m-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>[m
+[32m+[m[32m              <a class="navbar-brand" href="../index.html"><img src="../img/logo/cineflights-newlogo-textv2.png" alt=""></a>[m
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="navbar-toggler-icon"></span>[m
+               </button>[m
+               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">[m
+                 <ul class="navbar-nav">[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>[m
+[32m+[m[32m                    <a class="nav-link" aria-current="page" href="../pages/servicios.html">SERVICIOS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/galeria.html">GALERÍA</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link active" href="/pages/nosotros.html">NOSOTROS</a>[m
+[32m+[m[32m                    <a class="nav-link active" href="../pages/nosotros.html">NOSOTROS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>[m
+                   </li>[m
+                 </ul>[m
+               </div>[m
+             </div>[m
+           </nav>[m
+[31m-    </header>[m
+[31m-    <!-- *ends navbar -->[m
+[32m+[m[32m      <!-- *ends navbar -->[m
+ [m
+[32m+[m[32m    </header>[m
+[32m+[m[32m    <!--*termina header  -->[m
+ [m
+[32m+[m[32m    <!-- *incia main -->[m
+     <main>[m
+[32m+[m[32m      <section class="container-fluid d-flex justify-content-center whiteText fontOswaldBold mt-3 mb-3" data-aos="fade-down" data-aos-duration="1000">[m
+[32m+[m[32m        <p class="text-center fs-3">ACERCA DE NUESTRO EQUIPO</p>[m
+[32m+[m[32m      </section>[m
+[32m+[m
+[32m+[m[32m      <section class="container-fluid">[m
+[32m+[m[32m      <div class="row">[m
+[32m+[m
+[32m+[m[32m    <!-- *inicia card 1 -->[m
+[32m+[m[32m        <article class="col-md-6">[m
+[32m+[m[32m          <div class="card" style="width: 100%;">[m
+[32m+[m[32m            <img src="../img/about/chuck.jpg" class="card-img-top" alt="...">[m
+[32m+[m[32m            <div class="card-body">[m
+[32m+[m[32m              <p class="card-text">Carlos Rodríguez, Fundador y Director General de Cine Flights, estudió la licenciatura en Comunicación Visual en la Universidad de la Comunicación, apasionado por la produccion audiovisual encontró en los drones la forma perfecta de transmitir mensajes y resolver necesidades del mercado actual mexicano.</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </article>[m
+[32m+[m[32m    <!--*termina card 1 -->[m
+[32m+[m[41m        [m
+[32m+[m[32m        <article class="col-md-6">[m
+[32m+[m[32m          <img src="../img/about/cine-flighst.jpg" class="img-fluid rounded-3" alt="">[m
+[32m+[m
+[32m+[m[32m        </article>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      </section>[m
+       [m
+     </main>[m
+[32m+[m[32m    <!-- *termina main -->[m
+ [m
+[31m-    <footer class="container-fluid">[m
+[31m-      <!-- PARRAFO -->[m
+[31m-      <p class="whiteText fontOswaldBold">[m
+[31m-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©[m
+[31m-      </p>[m
+[31m-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->[m
+[31m-      <div class="listaRedes">[m
+[31m-        <a href="https://facebook.com" target="_blank"[m
+[31m-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"[m
+[31m-        /></a>[m
+[31m-        <a href="https://instagram.com" target="_blank"[m
+[31m-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"[m
+[31m-        /></a>[m
+[31m-        <a href="https://youtube.com" target="_blank"[m
+[31m-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"[m
+[31m-        /></a>[m
+[31m-      </div>[m
+[31m-    </footer>[m
+[32m+[m[32m        <!-- *footer -->[m
+[32m+[m[32m        <section class="container mt-4">[m
+[32m+[m[32m        </section>[m
+[32m+[m[41m    [m
+[32m+[m[32m        <footer class="footerBlack whiteText">[m
+[32m+[m[32m          <div class="contanier"></div>[m
+[32m+[m[32m          <nav class="row">[m
+[32m+[m[32m            <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>[m
+[32m+[m[41m    [m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m              <li class="col-3 list-unstyled"></li>[m
+[32m+[m[32m              <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>[m
+[32m+[m[32m              <li class="d-flex justify-content-center">[m
+[32m+[m[32m                <a href="http://facebook.com" target="_blank"><img src="../img/icons/facebook-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m                <a href="http://instagram.com" target="_blank"><img src="../img/icons/instagram-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m                <a href="http://youtube.com" target="_blank"><img src="../img/icons/youtube-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m              </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m        </footer>[m
+[32m+[m[32m        <!-- *ends footer -->[m
+ [m
+[31m-    <!--*script java -->[m
+[32m+[m[32m    <!--*script java BS -->[m
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>[m
+[32m+[m
+[32m+[m[32m        <!-- *SCRIPT JAVA AOS -->[m
+[32m+[m[32m        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>[m
+[32m+[m[32m        <script>[m
+[32m+[m[32m          AOS.init();[m
+[32m+[m[32m        </script>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/pages/servicios.html b/pages/servicios.html[m
+[1mindex 9e08eee..492a13f 100644[m
+[1m--- a/pages/servicios.html[m
+[1m+++ b/pages/servicios.html[m
+[36m@@ -11,7 +11,7 @@[m
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">[m
+ [m
+     <!-- *mi-css -->[m
+[31m-    <link rel="stylesheet" href="/css/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="../css/style.css">[m
+ [m
+     <title>Servicios</title>[m
+     <!-- *AOS LINK -->[m
+[36m@@ -19,42 +19,47 @@[m
+ [m
+ </head>[m
+ <body>[m
+[31m-    <!-- *navbar -->[m
+[31m-    <header>[m
+[31m-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">[m
+[32m+[m
+[32m+[m[32m    <!-- *inicia header -->[m
+[32m+[m[32m    <header class="sticky-top">[m
+[32m+[m[41m      [m
+[32m+[m[32m      <!-- *navbar -->[m
+[32m+[m[32m      <nav class="navbar navbar-expand-lg navbar-dark fontOswaldRegular navBlack sticky-top">[m
+             <div class="container-fluid fontOswaldBold">[m
+[31m-              <a class="navbar-brand" href="/index.html"><img src="/img/logo/cineflights-newlogo-text.png" alt=""></a>[m
+[32m+[m[32m              <a class="navbar-brand" href="../index.html"><img src="../img/logo/cineflights-newlogo-textv2.png" alt=""></a>[m
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+                 <span class="navbar-toggler-icon"></span>[m
+               </button>[m
+               <div class="collapse navbar-collapse justify-content-end mt-5" id="navbarNav">[m
+                 <ul class="navbar-nav">[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link active" aria-current="page" href="/pages/servicios.html">SERVICIOS</a>[m
+[32m+[m[32m                    <a class="nav-link active" aria-current="page" href="../pages/servicios.html">SERVICIOS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/galeria.html">GALERÍA</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>[m
+                   </li>[m
+                   <li class="nav-item">[m
+[31m-                    <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>[m
+[32m+[m[32m                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>[m
+                   </li>[m
+                 </ul>[m
+               </div>[m
+             </div>[m
+           </nav>[m
+[32m+[m[32m      <!-- *ends navbar -->[m
+     </header>[m
+[31m-    <!-- *ends navbar -->[m
+[31m-[m
+[32m+[m[32m    <!-- *termina header -->[m
+ [m
+[32m+[m[32m    <!-- *incia main -->[m
+     <main>[m
+[32m+[m[32m      <!-- *inician cards -->[m
+     <section class="container-fluid mb-5">[m
+         <h1 class="text-center mt-5 mb-5 whiteText fontOswaldBold " data-aos="fade-down" data-aos-duration="1000">SERVICIOS</h1>[m
+     <div class="row justify-content-around">[m
+         <div class="cardGrey" style="width: 18rem;">[m
+[31m-            <img src="/img/servicios/fotogrametria.png" class="card-img-top mt-3" alt="...">[m
+[32m+[m[32m            <img src="../img/servicios/fotogrametria.png" class="card-img-top mt-3" alt="...">[m
+             <div class="card-body whiteText fontOswaldBold">[m
+               <h5 class="card-title fontOswaldBold whiteText">FOTOGRAMETRÍA Y SERVICIOS ESPECIALES</h5>[m
+               <p class="card-text">Servicio de fotogrametría, revisión de instalaciones industriales con medición de emisiones a través de cámaras termicas y detectores de gases.</p>[m
+[36m@@ -62,8 +67,10 @@[m
+             </div>[m
+           </div>[m
+ [m
+[32m+[m[41m          [m
+[32m+[m
+           <div class="cardGrey" style="width: 18rem;">[m
+[31m-            <img src="/img/servicios/asist.png" class="card-img-top mt-3" alt="...">[m
+[32m+[m[32m            <img src="../img/servicios/asist.png" class="card-img-top mt-3" alt="...">[m
+             <div class="card-body whiteText fontOswaldBold">[m
+               <h5 class="card-title fontOswaldBold whiteText">GRABACIÓN CON DRONES ASISTIDOS</h5>[m
+               <p class="card-text">Servicio de grabación con drones asistidos para vuelos con planos cenitales, planos estabilizados y seguimiento preciso de objetivos en movimiento.</p>[m
+[36m@@ -72,7 +79,7 @@[m
+           </div>[m
+ [m
+           <div class="cardGrey" style="width: 18rem;">[m
+[31m-            <img src="/img/servicios/fpv.png" class="card-img-top mt-3" alt="...">[m
+[32m+[m[32m            <img src="../img/servicios/fpv.png" class="card-img-top mt-3" alt="...">[m
+             <div class="card-body whiteText fontOswaldBold">[m
+               <h5 class="card-title fontOswaldBold whiteText">GRABACIÓN CON DRONES FPV</h5>[m
+               <p class="card-text">Servicio de grabacion con drones FPV (First Person View), servicio recomendado para resultados más dinámicos y tomás que requieren de alto rendimiento.</p>[m
+[36m@@ -81,26 +88,31 @@[m
+           </div>[m
+     </div>[m
+     </section>[m
+[32m+[m[32m    <!-- *terminan cards -->[m
+     </main>[m
+[32m+[m[32m    <!-- *termina main -->[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!-- *footer -->[m
+[32m+[m[32m    <section class="container mt-4">[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <footer class="footerBlack whiteText">[m
+[32m+[m[32m     <div class="contanier"></div>[m
+[32m+[m[32m     <nav class="row">[m
+[32m+[m[32m       <p class="fontOswaldBold d-flex justify-content-center">CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©</p>[m
+ [m
+[31m-    <footer class="container-fluid">[m
+[31m-      <!-- PARRAFO -->[m
+[31m-      <p class="whiteText fontOswaldBold">[m
+[31m-        CINE FLIGHTS, TODOS LOS DERECHOS RESERVADOS, 2022 ©[m
+[31m-      </p>[m
+[31m-    <!-- CAJA CONTENEDOR DE REDES SOCIALES -->[m
+[31m-      <div class="listaRedes">[m
+[31m-        <a href="https://facebook.com" target="_blank"[m
+[31m-          ><img src="/img/icons/facebook-24pxwhite.png" alt="icono facebook"[m
+[31m-        /></a>[m
+[31m-        <a href="https://instagram.com" target="_blank"[m
+[31m-          ><img src="/img/icons/instagram-24pxwhite.png" alt="icono instagram"[m
+[31m-        /></a>[m
+[31m-        <a href="https://youtube.com" target="_blank"[m
+[31m-          ><img src="/img/icons/youtube-24pxwhite.png" alt="icono youtube"[m
+[31m-        /></a>[m
+[31m-      </div>[m
+[32m+[m[32m       <ul>[m
+[32m+[m[32m         <li class="col-3 list-unstyled"></li>[m
+[32m+[m[32m         <li class="fontOswaldBold whiteText d-flex justify-content-center">SOCIALS</li>[m
+[32m+[m[32m         <li class="d-flex justify-content-center">[m
+[32m+[m[32m           <a href="http://facebook.com" target="_blank"><img src="../img/icons/facebook-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://instagram.com" target="_blank"><img src="../img/icons/instagram-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m           <a href="http://youtube.com" target="_blank"><img src="../img/icons/youtube-24pxwhite.png" alt=""></a>[m
+[32m+[m[32m         </li>[m
+[32m+[m[32m       </ul>[m
+[32m+[m[32m     </nav>[m
+     </footer>[m
+[32m+[m[32m    <!-- *ends footer -->[m
+ [m
+     <!--*script java BS -->[m
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>[m
