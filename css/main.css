@@ -1,0 +1,59 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5; }
+
+body {
+  background-color: black; }
+
+.navColorBlack {
+  color: black; }
+
+.whiteText {
+  color: white; }
+
+.fontOswaldBold {
+  font-family: Oswald;
+  font-weight: 900; }
+
+.fontOswaldRegularNav {
+  font-family: Oswald;
+  font-weight: 400; }
+
+/* cards */
+.btn-grey {
+  color: #fff;
+  background-color: #4a4a4a;
+  border-color: #4a4a4a; }
+
+.cardGrey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #222222;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem; }
+
+.cardGrey:hover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #222222;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  transform: scale(0.9); }
+
+.footerBlack {
+  background-color: black; }
+
+.navBlack {
+  background-color: rgba(0, 0, 0, 0.753); }
