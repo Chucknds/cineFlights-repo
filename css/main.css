@@ -1,3 +1,5 @@
+@import url("./_fonts.scss");
+@import url("./_cards.scss");
 * {
   padding: 0%;
   margin: 0%;
@@ -5,12 +7,6 @@
 
 html {
   font-size: 62.5; }
-
-body {
-  background-color: black; }
-
-.navColorBlack {
-  color: black; }
 
 .whiteText {
   color: white; }
@@ -23,7 +19,6 @@ body {
   font-family: Oswald;
   font-weight: 400; }
 
-/* cards */
 .btn-grey {
   color: #fff;
   background-color: #4a4a4a;
@@ -51,6 +46,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   transform: scale(0.9); }
+
+body {
+  background-color: black; }
+
+.navColorBlack {
+  color: black; }
 
 .footerBlack {
   background-color: black; }
